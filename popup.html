@@ -2,9 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Currency Conversion</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+    <script src="popup.js"></script>
 </head>
 <body>
-
+<div class="container-fluid">
+    <div class="row justify-content-md-center">
+        <div class="col-12">
+            <div id="result" class="alert alert-primary"></div>
+            <form>
+                <div class="form-group">
+                    <label for="Currency1">Currency 1</label>
+                    <select name="Currency1" class="custom-select" id="Currency1">
+                        <option value="1" selected>US Dollar</option>
+                        <option value="2">Tooman</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="Currency2">
+                        Currency 2
+                    </label>
+                    <select name="Currency2" class="custom-select" id="Currency2">
+                        <option value="1" selected>US Dollar</option>
+                        <option value="2">Tooman</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="Amount">
+                        Amount
+                    </label>
+                    <input type="number" class="form-control" id="Amount" name="value">
+                </div>
+                <button type="button" onclick="myfunction()" value="Conversion" class="btn btn-primary">Conversion</button>
+            </form>
+        </div>
+    </div>
+</div>
 </body>
 </html>
