@@ -1,0 +1,21 @@
+{
+  //Required
+  "name": "Currency Conversion",
+  "version": "1.0",
+  "manifest_version": 2,
+  //Recommended
+  "description": "Currency Conversion Extension: Dollar to Tooman",
+  "icons": {
+    "128": "mz.png"
+  },
+  //Type of actions: Browser,Page, or none
+  "browser_action": {
+    "default_title": "Convert any Currency all Time",
+    "default_popup": "popup.html"
+  },
+  //intent of app, what you will access from the user
+  "permissions": [
+    "http://*/*",
+    "https://*/*"
+  ]
+}
